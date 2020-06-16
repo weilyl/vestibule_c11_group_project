@@ -1,7 +1,7 @@
 body {
   color : midnightblue;
   font-family: Helvetica Neue;
-  background-color: light-blue;
+  background-color: lightblue;
 }
 
 .product {
@@ -25,6 +25,7 @@ button {
   right: 57px;
   top: 1px;
 }
+
 #order-total {
   margin-right: 17px;
   text-align: right;
