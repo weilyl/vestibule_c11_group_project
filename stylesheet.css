@@ -1,0 +1,31 @@
+body {
+  color : midnightblue;
+  font-family: Helvetica Neue;
+  background-color: light-blue;
+}
+
+.product {
+  display : inline-block;
+  margin: 7px;
+  
+}
+
+button {
+  background-color: 4CAF50;
+}
+
+#basket-image {
+  position: absolute;
+  right: 17px;
+  top: 17px;
+}
+
+#item-counter {
+  position : absolute;
+  right: 57px;
+  top: 1px;
+}
+#order-total {
+  margin-right: 17px;
+  text-align: right;
+}

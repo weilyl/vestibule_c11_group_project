@@ -1,0 +1,89 @@
+// click button
+// tie button click to function
+// function 1: Add name to array
+// function 2: get # items in array
+// function 3: display # items
+// function 4: multiply # items by price
+// function 5: display total price (return)
+
+
+button id = "eggButton"
+
+// click button
+// tie button
+
+document.querySelector('#eggButton').addEventListener('click', addToCart);
+
+// add name to array
+
+function addToCart() {
+  cartItems.push();
+  // get # items in array
+  eggsNumber = cartItems.length;
+  // display # items
+  document.getElementById("item-counter").innerHTML = eggsNumber;
+  return eggsNumber;
+}
+
+// multiply # items by price 
+// USING LOOPS INSTEAD
+// eggsNumber * eggsPrice
+
+// display total price 
+// sum += ???
+// return sum; 
+
+
+const menu = {
+	groceries = [eggs, bagels, broccoli, oysterSauce, salmon, creamCheese];
+	prices = [eggPrice, bagelPrice, broccoliPrice, oysterSaucePrice, salmonPrice, creamCheesePrice];
+}
+	
+var eggs = {
+  name: "Organic Free Range Eggs",
+  price: 10
+}
+
+Let eggPrice = eggs.price; 
+
+prices[0] = eggPrice; 
+
+
+// LOOP TO ADD EGG PRICE
+for (i=0; i <= eggsNumber; i++) {
+	let eggsPriceTotal = eggsPrice * i; 
+}
+
+let totalPrice = eggsPriceTotal + bagelPrice + broccoliPrice + etc etc;
+
+<form name="selectForm">
+  <p>
+    <label for="musicTypes">Choose some music types, then click the button below:</label>
+    <select id="musicTypes" name="musicTypes" multiple="multiple">
+      <option selected="selected">R&B</option>
+      <option>Jazz</option>
+      <option>Blues</option>
+      <option>New Age</option>
+      <option>Classical</option>
+      <option>Opera</option>
+    </select>
+  </p>
+  <p><input id="btn" type="button" value="How many are selected?" /></p>
+</form>
+<script>
+
+
+function howMany(selectObject) {
+  let numberSelected = 0;
+  for (let i = 0; i < selectObject.options.length; i++) {
+    if (selectObject.options[i].selected) {
+      numberSelected++;
+    }
+  }
+  return numberSelected;
+}
+let btn = document.getElementById('btn');
+btn.addEventListener('click', function() {
+  alert('Number of options selected: ' + howMany(document.selectForm.musicTypes));
+});
+</script>

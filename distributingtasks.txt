@@ -1,0 +1,76 @@
+!!! Hey Nang Shen & Eric !!! I think I figured it out:
+
+Here's what we need to do:
+
+1. HTML - delete onclick attributes in button tags
+2. HTML - add id = "button1" (or something like that) to button tags
+3. make event listeners for each button (DONE)
+	ex) document.querySelector('#button1').addEventListener('click', addEggs);
+	ex) document.querySelector('#button2').addEventListener('click', addBagels);
+	ex) document.querySelector('#button3').addEventListener('click', addBroccoli);
+	ex) document.querySelector('#button4').addEventListener('click', addOysterSauce);
+	ex) document.querySelector('#button5').addEventListener('click', addSalmon);
+	ex) document.querySelector('#button6').addEventListener('click', addCreamCheese);
+4. keep objects for each grocery item (DONE; Nang Shen already made this)
+5. make object of arrays (DONE; Weily has this; not sure if necessary)
+6. declare variables for # of each item (eggsNumber, etc) (DONE)
+7. declare empty array (DONE; Nang Shen already made this)
+8. function addToCart to push items to cart, get array length, display item numbers
+
+	function addEggs() {
+  		cartItems.push();
+  		eggsNumber = cartItems.length;
+  		document.getElementById("item-counter").innerHTML = eggsNumber;
+  		return eggsNumber;
+	}
+
+	function addBagels() {
+  		cartItems.push();
+  		bagelsNumber = cartItems.length;
+  		document.getElementById("item-counter").innerHTML = bagelsNumber;
+  		return bagelsNumber;
+	}
+
+	function addBroccoli() {
+  		cartItems.push();
+  		broccoliNumber = cartItems.length;
+  		document.getElementById("item-counter").innerHTML = broccoliNumber;
+  		return broccoliNumber;
+	}
+
+	function addOysterSauce() {
+  		cartItems.push();
+  		oysterSauceNumber = cartItems.length;
+  		document.getElementById("item-counter").innerHTML = oysterSauceNumber;
+  		return oysterSauceNumber;
+	}
+
+	function addSalmon() {
+  		cartItems.push();
+  		salmonNumber = cartItems.length;
+  		document.getElementById("item-counter").innerHTML = salmonNumber;
+  		return salmonNumber;
+	}
+
+	function addCreamCheese() {
+  		cartItems.push();
+  		creamCheeseNumber = cartItems.length;
+  		document.getElementById("item-counter").innerHTML = creamCheeseNumber;
+  		return creamCheeseNumber;
+	}
+
+9. loop for each item Price: 
+
+		for (i=0; i <= eggsNumber; i++) {
+			let eggsPriceTotal = eggsPrice * i; 
+		}
+
+let totalPrice = eggsPriceTotal + bagelPrice + broccoliPrice + etc etc;
+
+
+let eggsNum;
+let bagelsNum;
+let broccoliNum;
+let oysterSauceNum;
+let salmonNum;
+let creamCheeseNum;
